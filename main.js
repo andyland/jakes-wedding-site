@@ -7,8 +7,8 @@ $(document).ready(function() {
   setHeight();
 
   $(window).resize(function() {
-    setHeight();
-    $('#menu').attr('data-offset-top', window.innerHeight - 80);
+    // setHeight();
+    // $('#menu').attr('data-offset-top', window.innerHeight - 40);
   });
 
   $(window).scroll(function() {
