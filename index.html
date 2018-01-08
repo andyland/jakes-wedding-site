@@ -1,0 +1,88 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="text-input.css">
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <section id="main">
+    <h3>14 April 2018</h3>
+    <h1>Gabrielle &amp; Jakob</h1>
+    <h3 class="italics">are getting married</h3>
+  </section>
+  <div id="menu">
+    <a id="details-link" href="#details">Details</a>
+    <a id="accomodation-link"  href="#accomodation">Accomodation</a>
+    <a id="rsvp-link" href="#rsvp">RSVP</a>
+  </div>
+  <section id="details">
+    <div class="row detail-content">
+      <div class="col-xs-12 col-md-6">
+        <div class="row details-container">
+          <img src="details.jpg" class="details-image">
+        </div>
+        <div class="row">
+          <div class="col-xs-4 col-md-5 detail-labels">Time</div>
+          <div class="col-xs-8 col-md-7">April 14th 2018, 2pm</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 col-md-5 detail-labels">Location</div>
+          <div class="col-xs-8 col-md-7">Gardens at the Chocolate Studio<br>2 Armstrong Ave<br>Waitara, Taranaki</div>
+        </div>
+      </div>
+  <div class="col-xs-12 col-md-6">
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12402.34509032975!2d174.246149!3d-39.0019378!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x800002f6f436ad54!2sThe+Garden+Shed+Chocolate+Studio!5e0!3m2!1sen!2sus!4v1515368745026" width="350px" height="350px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+</section>
+<section id="accomodation">
+  <h1>Accomodations</h1>
+</section>
+<section id="rsvp">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 rsvp-image-container">
+      <img class="rsvp-image" src="rsvp.jpg">
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <form id="rsvp-form">
+        <div class="question">
+          <input name="name" type="text" required/>
+          <label> Name</label>
+        </div>
+        <div class="question">
+          <input name="email" type="text" required/>
+          <label> Email</label>
+        </div>
+        <div>
+          <br>
+          <input type="radio" id="rsvp_true" name="rsvp" value="true" required>
+          <label for="rsvp_true">Ready to dance</label>
+          <input type="radio" id="rsvp_false" name="rsvp" value="false" required>
+          <label for="rsvp_false">Party on without us</label>
+        </div>
+        <div>
+          <br>
+          <input type="radio" id="date_true" name="date" value="true" required>
+          <label for="date_true">Bringing a date</label>
+          <input type="radio" id="date_false" name="date" value="false" required>
+          <label for="date_false">Finding one there</label>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+          <div class="thanks">Thanks!</div>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>

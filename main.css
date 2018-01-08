@@ -1,0 +1,181 @@
+body {
+  background: #CC5543;
+  margin: 0;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Lora, sans-serif;
+  text-shadow: 2px 2px #8888;
+  font-weight: 500;
+}
+.italics {
+  font-style: italic;
+}
+h3 {
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+  font-family: Lora, sans-serif;
+  text-shadow: 2px 2px #8888;
+  font-weight: 700;
+}
+#main {
+  background: url(main.jpg) no-repeat bottom center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color:#424d3a;
+}
+
+#menu {
+  background: #455C4F;
+  z-index: 1000;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  height: 40px;
+  bottom: 0;
+}
+
+#menu a {
+  font-size: 18px;
+  padding: 8px 20px 0;
+  color: #EDB579;
+  display: inline-block;
+}
+
+#details {
+  background: #59484F;
+}
+
+#accomodation{
+  background: #6D7696;
+}
+
+#rsvp {
+  background: #CC5543;
+}
+
+form {
+  min-width: 70%;
+}
+
+label {
+  color: #CC5543;
+}
+
+label[for="date_true"],
+label[for="rsvp_true"] {
+  margin-right: 8px;
+}
+
+input[type="radio"] {
+  margin-right: 4px;
+}
+
+input[type="text"] {
+  border-radius: 8px;
+}
+
+.detail-labels {
+  text-align: right;
+  font-weight: bold;
+}
+
+.detail-content {
+  padding-top: 64px;
+}
+
+.details-container {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.details-image {
+  width: 350px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.rsvp-image {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.rsvp-image-container {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .rsvp-image-container {
+    margin-top: 150px;
+  }
+  form {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .rsvp-image-container {
+    margin-top: 64px;
+  }
+  .rsvp-image {
+    width:350px;
+    height: 263px;
+  }
+  form {
+    /* margin-top: 150px; */
+  }
+}
+
+@media (min-width: 992px) {
+  .details-image {
+    padding-left: 50px;
+  }
+  .rsvp-image {
+    margin-top: 20px;
+    width: 520px;
+    height: 300px;
+    padding-left: 60px;
+  }
+}
+
+.thanks {
+  margin-top: 35px;
+  line-height: 0;
+  font-size: 17px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 60px;
+  color: #CC5543;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .map {
+    text-align: center;
+    margin: 20px auto;
+  }
+}
