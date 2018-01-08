@@ -1,23 +1,21 @@
 $(document).ready(function() {
+  $('#menu').attr('data-offset-top', window.innerHeight - 40);
   function setHeight() {
     $('section').css('height', Math.max(window.innerHeight, 759));
-    $('section#main').css('height', window.innerHeight);
+    $('section#main').css('height', window.innerHeight - 40);
   };
   setHeight();
 
   $(window).resize(function() {
     setHeight();
+    $('#menu').attr('data-offset-top', window.innerHeight - 80);
   });
 
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll > window.innerHeight - 40) {
-      $('#menu').css('top', '0');
-      $('#menu').css('position', 'fixed');
       $('body').css('background-color', '#CC5543');
     } else {
-      $('#menu').css('position', 'absolute');
-      $('#menu').css('top', 'inherit');
       $('body').css('background-color', '#424d3a');
     }
     if (scroll < window.innerHeight - 40) {

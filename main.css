@@ -46,12 +46,11 @@ h3 {
 #menu {
   background: #455C4F;
   z-index: 1000;
-  position: absolute;
   text-align: center;
   left: 0;
   right: 0;
+  top: 0;
   height: 40px;
-  bottom: 0;
 }
 
 #menu a {
