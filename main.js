@@ -45,12 +45,13 @@ $(document).ready(function() {
   		data: {
   			'email': $('input[name="email"]').val(),
   			'name': $('input[name="name"]').val(),
-        'going': 'true',
+        'going': $('input[name="rsvp"]:checked').val(),
   		}
   	}).done(function(data) {
       $('button').hide();
       $('.thanks').show();
   	}).fail(function(req, textStatus, err) {
+      alert('Unknown error, please try again later')
   	})
   })
 });
