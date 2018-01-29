@@ -39,7 +39,18 @@ $(document).ready(function() {
 
   $('form#rsvp-form').submit(function(e) {
     e.preventDefault();
-    $('button').hide();
-    $('.thanks').show();
+    $.ajax({
+  		url: 'https://enigmatic-fjord-34183.herokuapp.com/',
+  		type: 'POST',
+  		data: {
+  			'email': $('input[name="email"]').val(),
+  			'name': $('input[name="name"]').val(),
+        'going': 'true',
+  		}
+  	}).done(function(data) {
+      $('button').hide();
+      $('.thanks').show();
+  	}).fail(function(req, textStatus, err) {
+  	})
   })
 });
