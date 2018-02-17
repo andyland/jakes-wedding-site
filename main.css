@@ -15,6 +15,23 @@ section {
   width: 100%;
 }
 
+svg {
+  top: -10px;
+  min-width: 600px;
+  margin: -10px -150px 0;
+}
+
+#curve {
+  fill: transparent;
+}
+
+#main > svg > text > textPath {
+  fill: white;
+  font-size: 24px;
+  font-family: Lora, serif;
+  text-shadow: 2px 2px #8888;
+}
+
 h1 {
   font-size: 80px;
   margin: 0 auto;
@@ -35,6 +52,54 @@ h3 {
   text-shadow: 2px 2px #8888;
   font-weight: 700;
 }
+h3.date {
+  padding-top: 30px;
+}
+.gabe {
+  position: absolute;
+  font-size: 80px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Lora, sans-serif;
+  text-shadow: 2px 2px #8888;
+  font-weight: 500;
+  transform: rotate(-20deg);
+  top: 140px;
+  left: 50%;
+  margin-left: -180px;
+}
+@media (max-width: 400px) {
+  .gabe {
+    font-size: 60px;
+    margin-left: -140px;
+  }
+  div.and {
+    top: 150px;
+    margin-left: 90px;
+  }
+}
+@media (max-height: 500px) {
+  .gabe {
+    top: 100px
+  }
+  div.and {
+    top: 110px;
+  }
+}
+.and {
+  position: absolute;
+  font-size: 80px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Lora, sans-serif;
+  text-shadow: 2px 2px #8888;
+  font-weight: 500;
+  top: 170px;
+  left: 50%;
+  margin-left: 100px;
+}
 #main {
   background: url(main.jpg) no-repeat bottom center fixed;
   -webkit-background-size: cover;
@@ -46,7 +111,7 @@ h3 {
 }
 
 #menu {
-  background: #455C4F;
+  background: white;
   z-index: 1000;
   text-align: center;
   left: 0;
@@ -60,6 +125,7 @@ h3 {
   padding: 8px 20px 0;
   color: #EDB579;
   display: inline-block;
+  font-weight: 700;
 }
 
 #details {
@@ -179,4 +245,34 @@ input[type="text"] {
     text-align: center;
     margin: 20px auto;
   }
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked+label {
+  background: #CC5543;
+  color: white;
+}
+
+label.rsvp-label {
+  border: 1px solid #CC5543;
+  border-radius: 4px;
+  padding: 4px 12px;
+  user-select: none;
+}
+
+input[type="radio"]:checked+label:hover {
+  background: #d98073;
+}
+
+input[type="radio"]:not(:checked)+label:hover {
+  color: #d98073;
+}
+
+label.rsvp-label {
+  border: 1px solid #CC5543;
+  border-radius: 4px;
+  padding: 4px 12px;
 }

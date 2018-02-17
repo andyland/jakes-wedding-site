@@ -70,7 +70,7 @@ form .question label {
   letter-spacing: 0.01em;
   font-size: 17px;
   box-sizing: border-box;
-  padding: 10px 15px;
+  padding: 10px 15px 5px;
   display: block;
   position: absolute;
   margin-top: -40px;
@@ -86,7 +86,7 @@ form .question input[type="text"] {
   width: 100%;
   display: block;
   box-sizing: border-box;
-  padding: 10px 15px;
+  padding: 10px 15px 5px;
   border-radius: 60px;
   color: #CC5543;
   font-weight: 100;
