@@ -27,8 +27,8 @@ svg {
 
 #main > svg > text > textPath {
   fill: white;
-  font-size: 24px;
-  font-family: Lora, serif;
+  font-size: 32px;
+  font-family: 'Dancing Script', serif;
   text-shadow: 2px 2px #8888;
 }
 
@@ -57,11 +57,11 @@ h3.date {
 }
 .gabe {
   position: absolute;
-  font-size: 80px;
+  font-size: 100px;
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
-  font-family: Lora, sans-serif;
+  font-family: 'Dancing Script', sans-serif;
   text-shadow: 2px 2px #8888;
   font-weight: 500;
   transform: rotate(-20deg);
@@ -71,7 +71,7 @@ h3.date {
 }
 @media (max-width: 400px) {
   .gabe {
-    font-size: 60px;
+    font-size: 75px;
     margin-left: -140px;
   }
   div.and {
@@ -98,13 +98,19 @@ h3.date {
     margin-top: -60px;
   }
 }
+#accomodation-list {
+  margin-top: 40px;
+}
+#accomodation-list a {
+  color: white;
+}
 .and {
   position: absolute;
   font-size: 80px;
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
-  font-family: Lora, sans-serif;
+  font-family: 'Dancing Script', sans-serif;
   text-shadow: 2px 2px #8888;
   font-weight: 500;
   top: 170px;
