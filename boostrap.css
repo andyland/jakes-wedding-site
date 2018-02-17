@@ -25,118 +25,10 @@ svg {
   fill: transparent;
 }
 
-#accomodation {
-  position: relative;
-}
-
-#accomodation div{
-  border: 2px #EDB579 solid;
-}
-
-.airbnb {
-  position: absolute;
-  width:50%;
-  height:50%;
-  top:0;
-  left:0;
-  background: url(airbnb.jpg) no-repeat bottom center;
-  background-size: cover;
-}
-
-.airbnb h3 a {
-  color: white;
-  width: 100%;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  height: 36px;
-  padding-top: 4px;
-  vertical-align: middle;
-  background: #6D7696;
-  text-decoration: none;
-  text-align: center;
-  left: 0;
-}
-
-.urenui {
-  position: absolute;
-  width:50%;
-  height:50%;
-  top:50%;
-  left:0;
-  background: url(urenui.jpg) no-repeat bottom center;
-  background-size: cover;
-}
-
-.urenui h3 a {
-  color: white;
-  width: 100%;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  height: 36px;
-  vertical-align: middle;
-  background: #6D7696;
-  text-decoration: none;
-  text-align: center;
-  padding-top: 4px;
-  left: 0;
-}
-
-.cabins {
-  position: absolute;
-  width:50%;
-  height:50%;
-  top:00%;
-  left:50%;
-  background: url(cabins.jpg) no-repeat bottom center;
-  background-size: cover;
-}
-
-.cabins h3 a {
-  color: white;
-  width: 100%;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  height: 36px;
-  padding-top: 4px;
-  vertical-align: middle;
-  background: #6D7696;
-  text-decoration: none;
-  text-align: center;
-  left: 0;
-}
-
-.devon {
-  position: absolute;
-  width:50%;
-  height:50%;
-  top:50%;
-  left:50%;
-  background: url(devon.jpg) no-repeat bottom center;
-  background-size: cover;
-}
-
-.devon h3 a {
-  color: white;
-  width: 100%;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  height: 36px;
-  padding-top: 4px;
-  vertical-align: middle;
-  background: #6D7696;
-  text-decoration: none;
-  text-align: center;
-  left: 0;
-}
-
 #main > svg > text > textPath {
   fill: white;
-  font-size: 32px;
-  font-family: 'Dancing Script', serif;
+  font-size: 24px;
+  font-family: Lora, serif;
   text-shadow: 2px 2px #8888;
 }
 
@@ -165,11 +57,11 @@ h3.date {
 }
 .gabe {
   position: absolute;
-  font-size: 100px;
+  font-size: 80px;
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
-  font-family: 'Dancing Script', sans-serif;
+  font-family: Lora, sans-serif;
   text-shadow: 2px 2px #8888;
   font-weight: 500;
   transform: rotate(-20deg);
@@ -179,7 +71,7 @@ h3.date {
 }
 @media (max-width: 400px) {
   .gabe {
-    font-size: 75px;
+    font-size: 60px;
     margin-left: -140px;
   }
   div.and {
@@ -195,30 +87,13 @@ h3.date {
     top: 110px;
   }
 }
-@media (min-width: 750px) {
-  .gabe {
-    top: 150px
-  }
-  div.and {
-    top: 180px;
-  }
-  section svg {
-    margin-top: -60px;
-  }
-}
-#accomodation-list {
-  margin-top: 40px;
-}
-#accomodation-list a {
-  color: white;
-}
 .and {
   position: absolute;
   font-size: 80px;
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
-  font-family: 'Dancing Script', sans-serif;
+  font-family: Lora, sans-serif;
   text-shadow: 2px 2px #8888;
   font-weight: 500;
   top: 170px;
@@ -348,6 +223,15 @@ input[type="text"] {
     height: 300px;
     padding-left: 60px;
   }
+}
+
+.airbnb {
+  position: absolute;
+  width:50%;
+  height:50%;
+  top:0;
+  left:0;
+  background: url(airbnb.jpg) no-repeat bottom center fixed;
 }
 
 .thanks {
