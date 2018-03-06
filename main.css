@@ -252,9 +252,35 @@ h3.date {
   display: inline-block;
   font-weight: 700;
 }
-
+.wedding-time {
+  text-align: center;
+  margin: 0 0 20px;
+}
+#wedding-time{
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 16px;
+  text-shadow: 2px 2px #8888;
+}
+@media (min-width: 992px) {
+  #location-details {
+    margin-top: 102px;
+  }
+}
 #details {
-  background: #59484F;
+  /* background: #59484F; */
+  background-image: url('/details.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px #8888;
+}
+#details a{
+  color: #EDB579;
+  text-shadow: 2px 2px #8888;
 }
 
 #accomodation{
